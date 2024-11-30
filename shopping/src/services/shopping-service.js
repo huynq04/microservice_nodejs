@@ -40,7 +40,6 @@ class ShoppingService {
   }
 
   // get order details
-
   async ManageCart(customerId, item, qty, isRemove) {
     try {
       console.log(item, "Shopping Service Cart");

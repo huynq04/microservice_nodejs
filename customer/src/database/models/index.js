@@ -1,4 +1,4 @@
 module.exports = {
-    CustomerModel: require('./Customer'),
-    AddressModel: require('./Address')
-}
+  CustomerModel: require("./Customer"),
+  AddressModel: require("./Address"),
+};

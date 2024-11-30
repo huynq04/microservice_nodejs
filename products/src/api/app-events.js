@@ -1,13 +1,8 @@
- 
 module.exports = (app) => {
-     
-    app.use('/app-events', async (req,res,next) => {
+  app.use("/app-events", async (req, res, next) => {
+    const { payload } = req.body;
 
-        const { payload } = req.body;
-
-        console.log("===============  Products Service Received Event ====== ");
-        return res.status(200).json(payload);
-
-    });
-
-}
+    console.log("===============  Products Service Received Event ====== ");
+    return res.status(200).json(payload);
+  });
+};
